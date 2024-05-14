@@ -1,4 +1,7 @@
 import React from "react";
+import ujjwalp from '../assets/Ujjwal.jpg'
+import manishp from '../assets/manish.png'
+import rajp from '../assets/raj.jpg'
 
 const Team = () => {
   return (
@@ -9,7 +12,43 @@ const Team = () => {
                 <h2 class=" text-5xl text-center text-gray-900 mb-6">Meet the brains</h2>
                 <p class="text-lg text-gray-500 text-center">Meet our outstanding team - a synergy of talent, creativity, and dedication, crafting success together.</p>
             </div>
-            <div class="flex flex-wrap justify-center gap-y-14 max-w-3xl mx-auto lg:max-w-full ">
+
+            <div className="grid gap-10 row-gap-8 mx-auto sm:row-gap-10 lg:max-w-screen-lg sm:grid-cols-2 lg:grid-cols-3">
+        <div className="flex">
+          <img
+            className="object-cover w-20 h-20 mr-4 rounded-full shadow"
+            src={manishp}
+            alt="Person"
+          />
+          <div className="flex flex-col justify-center">
+            <p className="text-lg font-bold">Manish Khadka</p>
+            <p className="text-sm text-gray-800">CEO</p>
+          </div>
+        </div>
+        <div className="flex">
+          <img
+            className="object-cover w-20 h-20 mr-4 rounded-full shadow"
+            src={ujjwalp}
+            alt="Person"
+          />
+          <div className="flex flex-col justify-center">
+            <p className="text-lg font-bold">Ujjwal Dahal</p>
+            <p className="text-sm text-gray-800">COO</p>
+          </div>
+        </div>
+        <div className="flex">
+          <img
+            className="object-cover w-20 h-20 mr-4 rounded-full shadow"
+            src={rajp}
+            alt="Person"
+          />
+          <div className="flex flex-col justify-center">
+            <p className="text-lg font-bold">Rajkumar Shrestha</p>
+            <p className="text-sm text-gray-800">CTO</p>
+          </div>
+        </div>
+        </div>
+            {/* <div class="flex flex-wrap justify-center gap-y-14 max-w-3xl mx-auto lg:max-w-full ">
                 <div class="group block text-center lg:w-1/5 sm:w-1/3 min-[450px]:w-1/2 w-full">
                     <div class="relative mb-5">
                         <img src="https://pagedone.io/asset/uploads/1698649968.png" alt="Marvin image" class="w-28 h-28 rounded-2xl object-cover mx-auto ransition-all duration-500 border-2 border-solid border-transparent group-hover:border-orange-600"/>
@@ -73,7 +112,7 @@ const Team = () => {
                     <h4 class="text-xl text-gray-900 font-semibold text-center mb-2 transition-all duration-500 group-hover:text-orange-600">Dianne Russell</h4>
                     <span class="text-gray-500 text-center block transition-all duration-500 group-hover:text-gray-900">Product Designer</span>
                 </div>
-            </div>
+            </div> */}
       </div>
     </section>
                                             
